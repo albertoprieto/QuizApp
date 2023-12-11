@@ -1,0 +1,410 @@
+#:import hex kivy.utils.get_color_from_hex
+#:import utils kivy.utils
+
+ScreenManager:
+    SplashScreen:
+    FirstScreen:
+    AboutScreen:
+    Primer:
+    Results:
+
+
+<SplashScreen>:
+    canvas.before:
+        Color:
+            rgb: utils.get_color_from_hex("#81b29a")
+
+    MDScreen:
+        name: "splashscreen"
+        id: splashscreen
+
+        MDBoxLayout:
+            MDFloatLayout:
+                Image:
+                    source:'jap.png'
+                    allow_stretch: True
+                    anim_delay: 5
+                    anim_loop: 5
+                    anim_reset: True
+                MDLabel:
+                    text: 'Dev JAP Apps'
+                    halign: 'center'
+
+
+                MDLabel:
+                    text: 'Bienvenido'
+                    halign: 'center'
+                    pos_hint:{'center_y':.4}
+
+
+<FirstScreen>:
+    name: 'firstscreen'
+    ScreenManager:
+        Screen:                
+            MDScreen:
+                BoxLayout:
+                    orientation: 'vertical'
+                    MDTopAppBar:
+                        id: toolbar
+                        pos_hint: {"top" : 1}
+                        title:"Bienvenido"
+                        left_action_items:[["menu",lambda x:nav_drawer.set_state("open")]]
+
+
+                    MDCard:
+                        size_hint_y: None
+                        BoxLayout:
+                            orientation: 'vertical'
+                            MDLabel:
+                                halign: 'center'
+                                text: "Selecciona una asignatura"
+                                size_hint_y: None
+                    ScrollView:
+
+                        MDGridLayout:
+                            height: self.minimum_height
+                            size_hint_y: None
+                            cols: 2
+                            padding: dp(20)
+                            spacing: dp(20)
+
+
+                            MDCard:
+                                size_hint_y: None
+                                #on_release: root.manager.current = 'primer'
+                                on_release: root.set_quest('medicina_interna')
+                                MDBoxLayout:
+                                    orientation:'vertical'
+                                    Image:
+                                        source: '1.png'
+                                    MDLabel:
+                                        text:'Medicina Interna'
+                                        halign: 'center'
+
+                                        
+
+                            MDCard:
+                                size_hint_y: None
+                                on_release: root.set_quest('ginecologia')
+                                MDBoxLayout:
+                                    orientation:'vertical'
+                                    Image:
+                                        source: '2.png'
+                                    MDLabel:
+                                        text:'Ginecología'
+                                        halign: 'center'
+
+
+                            MDCard:
+                                size_hint_y: None
+                                on_release: root.set_quest('farmacologia')
+                                MDBoxLayout:
+                                    orientation:'vertical'
+                                    Image:
+                                        source: '3.png'
+                                    MDLabel:
+                                        text:'Farmacologia'
+                                        halign: 'center'
+
+                            MDCard:
+                                size_hint_y: None
+                                on_release: root.set_quest('cirugia')
+                                MDBoxLayout:
+                                    orientation:'vertical'
+                                    Image:
+                                        source: '4.png'
+                                    MDLabel:
+                                        text:'Cirugia'
+                                        halign: 'center'
+
+                            MDCard:
+                                size_hint_y: None
+                                on_release: root.set_quest('medicina_preventiva')
+                                MDBoxLayout:
+                                    orientation:'vertical'
+                                    Image:
+                                        source: '5.png'
+                                    MDLabel:
+                                        text:'Medicina preventiva'
+                                        halign: 'center'
+
+                            MDCard:
+                                size_hint_y: None
+                                on_release: root.set_quest('neumologia')
+                                MDBoxLayout:
+                                    orientation:'vertical'
+                                    Image:
+                                        source: '6.png'
+                                    MDLabel:
+                                        text:'Neumología'
+                                        halign: 'center'
+
+                            MDCard:
+                                size_hint_y: None
+                                on_release: root.set_quest('oftalmologia')
+                                MDBoxLayout:
+                                    orientation:'vertical'
+                                    Image:
+                                        source: '7.png'
+                                    MDLabel:
+                                        text:'Oftalmología'
+                                        halign: 'center'
+
+                            MDCard:
+                                size_hint_y: None
+                                on_release: root.set_quest('epidemiologia')
+                                MDBoxLayout:
+                                    orientation:'vertical'
+                                    Image:
+                                        source: '1.png'
+                                    MDLabel:
+                                        text:'Epidemiología'
+                                        halign: 'center'
+
+
+            MDNavigationDrawer:
+                id: nav_drawer
+                MDList:
+                    id: md_list
+                    pos_hint: {"top": 1}
+                    MDLabel:
+                        text: "Menú"
+                        size_hint_y: None
+
+                    OneLineIconListItem:
+                        text: "Inicio"
+                        on_release:
+                            root.manager.current = 'firstscreen'
+                            root.ids.nav_drawer.set_state(new_state='toggle', animation=True)
+                        IconLeftWidget:
+                            icon: "account-plus-outline"
+
+
+                    OneLineIconListItem:
+                        text: "Acerca de"
+                        on_release:
+                            root.manager.current = 'about'
+                            root.ids.nav_drawer.set_state(new_state='toggle', animation=True)
+                        IconLeftWidget:
+                            icon: "bookmark-plus-outline" 
+
+
+<AboutScreen>:
+    name: 'about'
+    ScreenManager:
+        Screen:                
+            MDScreen:
+                BoxLayout:
+                    orientation: 'vertical'
+                    MDTopAppBar:
+                        id: toolbar
+                        pos_hint: {"top" : 1}
+                        title: "Acerca de"
+                        left_action_items: [["menu", lambda x: nav_drawer.set_state("open")]]
+
+                    ScrollView:
+                        GridLayout:
+                            cols: 1
+                            spacing: dp(10)
+                            padding: dp(10)
+
+                            MDLabel:
+                                text: "Acerca de"
+                                halign: 'center'
+                                font_style: 'H5'
+                            MDCard:
+                                size_hint_y: None
+                                pos_hint:'center'
+
+                                MDBoxLayout:
+                                    orientation: 'vertical'
+                                    Image:
+                                        source: 'jap.png'
+                            MDLabel:
+                                text: 'Aplicación desarrollada por JAP.\nHacemos aplicaciones web, de escritorio, móbiles y más.\nEspecialistas en automatización y soluciones en tecnología\nVisita la página la página oficial del desarrollador para más información.'
+                                halign: 'center'
+
+
+            MDNavigationDrawer:
+                id: nav_drawer
+                MDList:
+                    id: md_list
+                    pos_hint: {"top": 1}
+                    MDLabel:
+                        text: "Menú"
+                        size_hint_y: None
+
+                    OneLineIconListItem:
+                        text: "Inicio"
+                        on_release:
+                            root.manager.current = 'firstscreen'
+                            root.ids.nav_drawer.set_state(new_state='toggle', animation=True)
+                        IconLeftWidget:
+                            icon: "account-plus-outline"
+
+                    OneLineIconListItem:
+                        text: "Acerca de"
+                        on_release:
+                            root.manager.current = 'about'
+                            root.ids.nav_drawer.set_state(new_state='toggle', animation=True)
+                        IconLeftWidget:
+                            icon: "bookmark-plus-outline" 
+
+
+<Primer>:
+    name: 'primer'
+    current_question: 0
+    time_remaining: 30
+
+    ScreenManager:
+
+        Screen:
+            MDScreen:
+                BoxLayout:
+                    orientation: 'vertical'
+                    MDTopAppBar:
+                        id: toolbar
+                        pos_hint: {"top": 1}
+                        title: "Primer examen"
+                    
+                    BoxLayout:
+                        orientation: 'horizontal'
+                        size_hint_y: None
+                        height: dp(28)
+                        MDLabel:
+                            id: timer_label
+                            text: f"Tiempo restante: {root.time_remaining}s "
+                            halign: 'right'
+
+                    ScrollView:
+                        height: root.height - dp(150)
+                        MDLabel:
+                            text: root.questions[root.current_question]['question'] if root.questions else ''
+                            halign: 'center'
+                            size_hint_y: None
+                            markup: True
+                            text_size: self.width, None
+
+                    MDGridLayout:
+                        id: grid_layout
+                        cols: 1
+                        spacing: dp(10)
+                        padding: dp(20)
+
+                        Button:
+                            text: root.questions[root.current_question]['options'][0] if root.questions else ''
+                            group: 'options'
+                            on_press: root.check_answer(0,self)
+                            width: root.width * .9
+                            on_release: root.reset_button_colors()
+                            canvas.before:
+                                Color:
+                                    rgba: 1, 1, 1, 0.3
+                                Rectangle:
+                                    pos: self.pos
+                                    size: self.size
+                        Button:
+                            text: root.questions[root.current_question]['options'][1] if root.questions else ''
+                            group: 'options'
+                            on_press: root.check_answer(1,self)
+                            width: root.width *.9
+                            on_release: root.reset_button_colors()
+                            canvas.before:
+                                Color:
+                                    rgba: 1, 1, 1, 0.3
+                                Rectangle:
+                                    pos: self.pos
+                                    size: self.size
+
+                        Button:
+                            text: root.questions[root.current_question]['options'][2] if root.questions else ''
+                            group: 'options'
+                            on_press: root.check_answer(2,self)
+                            size_hint_x: None
+                            width: root.width *.9
+                            on_release: root.reset_button_colors()
+                            canvas.before:
+                                Color:
+                                    rgba: 1, 1, 1, 0.3
+                                Rectangle:
+                                    pos: self.pos
+                                    size: self.size
+                        Button:
+                            text: root.questions[root.current_question]['options'][3] if root.questions else ''
+                            group: 'options'
+                            on_press: root.check_answer(3,self)
+                            size_hint_x: None
+                            width: root.width *.9
+                            on_release: root.reset_button_colors()
+                            canvas.before:
+                                Color:
+                                    rgba: 1, 1, 1, 0.3
+                                Rectangle:
+                                    pos: self.pos
+                                    size: self.size
+
+<Results>:
+    name: 'results'
+    MDScreen:
+        BoxLayout:
+            orientation: 'vertical'
+
+            MDTopAppBar:
+                title: "Resultados"
+                pos_hint: {"top": 1}
+
+            ScrollView:
+                GridLayout:
+                    cols: 1
+                    spacing: dp(20)
+                    padding: dp(20)
+
+                    MDCard:
+                        size_hint_y: None
+                        pos_hint:'center'
+
+                        MDBoxLayout:
+                            orientation: 'vertical'
+                            Image:
+                                source: 'jap.png'
+
+
+                    MDCard:
+                        orientation: 'vertical'
+                        size_hint_y: None
+                        height: dp(150)  # Ajusta la altura según sea necesario
+                        MDLabel:
+                            text: "Resultados"
+                            halign: 'center'
+                            font_style: 'H5'
+                        MDLabel:
+                            text: f"Preguntas totales: {root.total_preguntas}"
+                            halign: 'center'
+                        MDLabel:
+                            text: f"Preguntas correctas: {root.resultados}"
+                            halign: 'center'
+                        MDLabel:
+                            text: f"Preguntas incorrectas: {root.total_preguntas - root.resultados}"
+                            halign: 'center'
+                        MDLabel:
+                            text: f"Calificación total: {(root.resultados / root.total_preguntas) * 10:.2f}/10"
+                            halign: 'center'
+
+                        MDRaisedButton:
+                            text: "Volver al Inicio"
+                            size_hint: (None, None)
+                            size: (dp(200), dp(40))
+                            pos_hint: {"center_x": 0.5}
+                            on_release: root.manager.current = 'firstscreen'
+                            on_press: root.clear_results()
+
+                    MDCard:
+                        orientation: 'vertical'
+                        size_hint_y: None
+                        MDRaisedButton:
+                            md_bg_color:get_color_from_hex('#eb4034')
+                            size_hint: (None, None)
+                            size: (dp(200), dp(40))
+                            pos_hint: {"center_x": 0.5}
+                            text: 'Reintentar'
+                            on_release: root.reintentar()

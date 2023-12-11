@@ -1,0 +1,514 @@
+{
+    "medicina_interna" : [
+        {
+            "question": "¿Cuál es la función principal del riñón?",
+            "options": ["Producción de insulina", "Filtración de sangre", "Digestión de alimentos", "Respiración celular"],
+            "correct_answer": 1,
+            "feedback": "Los riñones son responsables de filtrar la sangre para eliminar productos de desecho y exceso de agua, formando la orina."
+        },
+
+        {
+            "question": "¿Cuál es la función principal del riñón?",
+            "options": ["Producción de insulina", "Filtración de sangre", "Digestión de alimentos", "Respiración celular"],
+            "correct_answer": 1,
+            "feedback": "Los riñones son responsables de filtrar la sangre para eliminar productos de desecho y exceso de agua, formando la orina."
+        },
+        {
+            "question": "¿Qué órgano es responsable de la producción de bilis?",
+            "options": ["Páncreas", "Hígado", "Estómago", "Riñón"],
+            "correct_answer": 1,
+            "feedback": "El hígado produce la bilis, un fluido que ayuda en la digestión de las grasas en el intestino delgado."
+        },
+        {
+            "question": "¿Qué hormona regula los niveles de glucosa en sangre?",
+            "options": ["Insulina", "Cortisol", "Estrógeno", "Testosterona"],
+            "correct_answer": 0,
+            "feedback": "La insulina es la hormona que regula los niveles de glucosa en sangre al facilitar la absorción de glucosa por parte de las células."
+        },
+        {
+            "question": "¿Cuál es la función principal de los glóbulos blancos?",
+            "options": ["Transportar oxígeno", "Coagulación sanguínea", "Defensa contra infecciones", "Digestión de nutrientes"],
+            "correct_answer": 2,
+            "feedback": "Los glóbulos blancos son parte del sistema inmunológico y tienen la función principal de defender el cuerpo contra infecciones y agentes patógenos."
+        },
+        {
+            "question": "¿Qué enfermedad afecta principalmente al sistema nervioso central?",
+            "options": ["Diabetes", "Enfermedad de Crohn", "Esclerosis múltiple", "Asma"],
+            "correct_answer": 2,
+            "feedback": "La esclerosis múltiple es una enfermedad autoinmune que afecta el sistema nervioso central, causando daño a la mielina que recubre las fibras nerviosas."
+        },
+        {
+            "question": "¿Cuál es la función de la hormona tiroidea?",
+            "options": ["Controlar el metabolismo", "Regular la presión arterial", "Digestión de grasas", "Producir insulina"],
+            "correct_answer": 0,
+            "feedback": "Las hormonas tiroideas, como la tiroxina, regulan el metabolismo al influir en la velocidad a la que las células queman energía."
+        },
+        {
+            "question": "¿Cuál es el órgano blanco principal de la hormona insulina?",
+            "options": ["Riñón", "Páncreas", "Hígado", "Músculo"],
+            "correct_answer": 2,
+            "feedback": "El hígado es un órgano clave que responde a la insulina al regular la absorción y almacenamiento de glucosa."
+        },
+        {
+            "question": "¿Qué tipo de células sanguíneas transporta el oxígeno?",
+            "options": ["Glóbulos blancos", "Plaquetas", "Hemocianina", "Glóbulos rojos"],
+            "correct_answer": 3,
+            "feedback": "Los glóbulos rojos contienen hemoglobina, que se une al oxígeno en los pulmones y lo transporta a los tejidos del cuerpo."
+        },
+        {
+            "question": "¿Cuál es la función del sistema linfático?",
+            "options": ["Digestión de alimentos", "Transporte de oxígeno", "Defensa contra patógenos", "Regulación hormonal"],
+            "correct_answer": 2,
+            "feedback": "El sistema linfático ayuda en la defensa contra patógenos al producir linfocitos y filtrar la linfa."
+        },
+        {
+            "question": "¿Cuál es el principal órgano de desintoxicación en el cuerpo humano?",
+            "options": ["Páncreas", "Hígado", "Riñón", "Estómago"],
+            "correct_answer": 1,
+            "feedback": "El hígado desintoxica el cuerpo al procesar y eliminar sustancias tóxicas, además de realizar otras funciones metabólicas."
+        }
+    ],
+
+    "ginecologia" : [
+        {
+            "question": "¿Cuál es la función principal del útero?",
+            "options": ["Producción de óvulos", "Filtración de sangre", "Gestación del feto", "Digestión de alimentos"],
+            "correct_answer": 2,
+            "feedback": "El útero es el órgano responsable de la gestación del feto durante el embarazo."
+        },
+        {
+            "question": "¿Qué hormona es clave para el ciclo menstrual?",
+            "options": ["Insulina", "Progesterona", "Estrógeno", "Testosterona"],
+            "correct_answer": 2,
+            "feedback": "El estrógeno es una hormona clave en el ciclo menstrual, regulando el desarrollo y liberación de óvulos."
+        },
+        {
+            "question": "¿Cuál es el propósito principal de las trompas de Falopio?",
+            "options": ["Producción de óvulos", "Transporte de esperma", "Fertilización del óvulo", "Almacenamiento de óvulos"],
+            "correct_answer": 2,
+            "feedback": "Las trompas de Falopio son el sitio donde generalmente ocurre la fertilización del óvulo por el esperma."
+        },
+        {
+            "question": "¿Cuál es el término médico para el proceso de expulsión del bebé durante el parto?",
+            "options": ["Cesárea", "Aborto", "Lactancia", "Parto vaginal"],
+            "correct_answer": 3,
+            "feedback": "El parto vaginal es el proceso mediante el cual el bebé es expulsado del útero a través del canal del parto."
+        },
+        {
+            "question": "¿Qué órgano es responsable de la producción de leche materna?",
+            "options": ["Útero", "Vagina", "Mama", "Ovario"],
+            "correct_answer": 2,
+            "feedback": "Las mamas son los órganos responsables de la producción y secreción de leche materna durante la lactancia."
+        },
+        {
+            "question": "¿Cuál es el término para la interrupción espontánea del embarazo antes de las 20 semanas de gestación?",
+            "options": ["Parto prematuro", "Aborto espontáneo", "Embarazo ectópico", "Preeclampsia"],
+            "correct_answer": 1,
+            "feedback": "Un aborto espontáneo es la pérdida natural del embarazo antes de las 20 semanas de gestación."
+        },
+        {
+            "question": "¿Qué es la endometriosis?",
+            "options": ["Infección del útero", "Crecimiento anormal del endometrio", "Malformación fetal", "Enfermedad mamaria"],
+            "correct_answer": 1,
+            "feedback": "La endometriosis es una condición en la cual el tejido similar al revestimiento uterino crece fuera del útero, causando dolor y otros síntomas."
+        },
+        {
+            "question": "¿Cuál es la función principal de los ovarios?",
+            "options": ["Producción de esperma", "Producción de óvulos", "Digestión de nutrientes", "Regulación hormonal"],
+            "correct_answer": 1,
+            "feedback": "Los ovarios son los órganos reproductivos femeninos que producen óvulos y liberan hormonas como el estrógeno y la progesterona."
+        },
+        {
+            "question": "¿Qué es la menopausia?",
+            "options": ["Inicio del ciclo menstrual", "Final del ciclo menstrual", "Embarazo", "Menstruación irregular"],
+            "correct_answer": 1,
+            "feedback": "La menopausia es el cese natural del ciclo menstrual y marca el final de la capacidad reproductiva en las mujeres."
+        },
+        {
+            "question": "¿Cuál es la función de la vulva en el sistema reproductor femenino?",
+            "options": ["Protección de los órganos internos", "Producción de óvulos", "Regulación hormonal", "Eliminación de desechos"],
+            "correct_answer": 0,
+            "feedback": "La vulva es la parte externa de los órganos genitales femeninos y proporciona protección a los órganos internos, incluyendo la abertura vaginal."
+        }
+    ],
+
+    "farmacologia": [
+        {
+            "question": "¿Cuál es el mecanismo de acción de los inhibidores de la enzima convertidora de angiotensina (IECA)?",
+            "options": ["Inhibición de la síntesis de prostaglandinas", "Bloqueo de los receptores beta-adrenérgicos", "Bloqueo de la enzima convertidora de angiotensina", "Estimulación de la liberación de insulina"],
+            "correct_answer": 2,
+            "feedback": "Los IECA bloquean la enzima convertidora de angiotensina, reduciendo la formación de angiotensina II y dilatando los vasos sanguíneos."
+        },
+        {
+            "question": "¿Cuál es el efecto principal de los antagonistas de los receptores H2 en el tratamiento de la úlcera péptica?",
+            "options": ["Estimulación de la secreción ácida", "Bloqueo de la acción de la histamina", "Estimulación de la motilidad gástrica", "Inhibición de la síntesis de prostaglandinas"],
+            "correct_answer": 1,
+            "feedback": "Los antagonistas de los receptores H2 bloquean la acción de la histamina, disminuyendo la secreción ácida y ayudando en el tratamiento de úlceras pépticas."
+        },
+        {
+            "question": "¿Qué clase de fármacos es conocida por su acción antiinflamatoria y antipirética, pero no tiene propiedades analgésicas?",
+            "options": ["AINE", "Corticosteroides", "Paracetamol", "Opioides"],
+            "correct_answer": 2,
+            "feedback": "El paracetamol tiene propiedades antiinflamatorias y antipiréticas, pero su acción analgésica es menos potente que otros analgésicos como los AINE."
+        },
+        {
+            "question": "¿Cuál es el mecanismo de acción de los betabloqueantes en el tratamiento de la hipertensión?",
+            "options": ["Vasodilatación directa", "Inhibición de la enzima convertidora de angiotensina", "Bloqueo de los receptores beta-adrenérgicos", "Inhibición de la recaptación de serotonina"],
+            "correct_answer": 2,
+            "feedback": "Los betabloqueantes bloquean los receptores beta-adrenérgicos, reduciendo la frecuencia cardíaca y la fuerza de contracción del corazón, lo que disminuye la presión arterial."
+        },
+        {
+            "question": "¿Cuál es el principal efecto de los diuréticos de asa en el sistema renal?",
+            "options": ["Retención de sodio", "Aumento de la absorción de agua", "Aumento de la excreción de sodio y agua", "Inhibición de la reabsorción de potasio"],
+            "correct_answer": 2,
+            "feedback": "Los diuréticos de asa aumentan la excreción de sodio y agua en la nefrona, lo que resulta en una reducción de la carga de volumen y presión arterial."
+        },
+        {
+            "question": "¿Cuál es el mecanismo de acción de los anticoagulantes orales directos (ACOD)?",
+            "options": ["Inhibición de la vitamina K", "Inhibición del factor Xa o trombina", "Aumento de la actividad plaquetaria", "Inhibición de la fibrinólisis"],
+            "correct_answer": 1,
+            "feedback": "Los ACOD inhiben directamente el factor Xa o la trombina, reduciendo la formación de coágulos sanguíneos."
+        },
+        {
+            "question": "¿Cuál es el propósito principal de los agentes antihipertensivos bloqueadores de los canales de calcio?",
+            "options": ["Inhibición de la enzima convertidora de angiotensina", "Bloqueo de los receptores beta-adrenérgicos", "Relajación de los vasos sanguíneos al bloquear los canales de calcio", "Aumento de la actividad simpática"],
+            "correct_answer": 2,
+            "feedback": "Los bloqueadores de los canales de calcio relajan los vasos sanguíneos al bloquear los canales de calcio, lo que reduce la presión arterial."
+        },
+        {
+            "question": "¿Cuál es el efecto primario de los broncodilatadores en el tratamiento de enfermedades respiratorias como el asma?",
+            "options": ["Reducción de la inflamación bronquial", "Relajación de los músculos bronquiales", "Inhibición de la liberación de histamina", "Aumento de la producción de moco"],
+            "correct_answer": 1,
+            "feedback": "Los broncodilatadores relajan los músculos bronquiales, lo que facilita la respiración al mejorar el flujo de aire en los pulmones."
+        },
+        {
+            "question": "¿Cuál es el mecanismo de acción de los inhibidores de la bomba de protones (IBP) en el tratamiento de la enfermedad por reflujo gastroesofágico (ERGE)?",
+            "options": ["Estimulación de la motilidad gástrica", "Neutralización del ácido gástrico", "Inhibición de la síntesis de prostaglandinas", "Bloqueo de la secreción de ácido gástrico"],
+            "correct_answer": 3,
+            "feedback": "Los IBP bloquean la secreción de ácido gástrico al inhibir la bomba de protones en las células parietales del estómago, reduciendo la acidez."
+        },
+        {
+            "question": "¿Cuál es el efecto principal de los antihistamínicos de segunda generación?",
+            "options": ["Sedación", "Bloqueo de los receptores H1", "Vasoconstricción", "Estimulación del sistema nervioso central"],
+            "correct_answer": 1,
+            "feedback": "Los antihistamínicos de segunda generación bloquean los receptores H1, reduciendo los síntomas alérgicos sin causar sedación significativa."
+        }
+    ],
+
+    "cirugia": [
+        {
+            "question": "¿Cuál es el procedimiento quirúrgico común para extirpar la vesícula biliar?",
+            "options": ["Colectomía", "Nefrectomía", "Colecistectomía", "Histerectomía"],
+            "correct_answer": 2,
+            "feedback": "La colecistectomía es el procedimiento quirúrgico para extirpar la vesícula biliar, comúnmente realizado mediante laparoscopia."
+        },
+        {
+            "question": "¿En qué consiste la cirugía de derivación gástrica?",
+            "options": ["Extirpación de parte del estómago", "Conexión del estómago con el intestino delgado", "Reducción del tamaño del estómago", "Cierre de la vesícula biliar"],
+            "correct_answer": 1,
+            "feedback": "La cirugía de derivación gástrica implica conectar el estómago directamente al intestino delgado, reduciendo la absorción de alimentos y ayudando en la pérdida de peso."
+        },
+        {
+            "question": "¿Cuál es el objetivo de una cirugía de revascularización coronaria?",
+            "options": ["Remover placas ateroscleróticas", "Corregir defectos congénitos en el corazón", "Restaurar el flujo sanguíneo al corazón", "Implantar un marcapasos"],
+            "correct_answer": 2,
+            "feedback": "La cirugía de revascularización coronaria busca restaurar el flujo sanguíneo al corazón al bypassar las arterias coronarias obstruidas."
+        },
+        {
+            "question": "¿Qué técnica quirúrgica se utiliza para extirpar un tumor maligno junto con el tejido circundante?",
+            "options": ["Resección", "Biopsia", "Laparoscopia", "Ablación"],
+            "correct_answer": 0,
+            "feedback": "La resección quirúrgica implica la extirpación completa de un tumor maligno junto con el tejido circundante para asegurar la eliminación del cáncer."
+        },
+        {
+            "question": "¿En qué tipo de cirugía se utiliza un endoscopio para visualizar y realizar procedimientos dentro del cuerpo?",
+            "options": ["Cirugía abierta", "Cirugía laparoscópica", "Cirugía torácica", "Cirugía ortopédica"],
+            "correct_answer": 1,
+            "feedback": "La cirugía laparoscópica utiliza un endoscopio para realizar procedimientos dentro del cuerpo a través de pequeñas incisiones, minimizando el trauma."
+        },
+        {
+            "question": "¿Cuál es el propósito de una cirugía de cataratas?",
+            "options": ["Corregir el astigmatismo", "Corregir la miopía", "Remover el cristalino opaco", "Corregir el estrabismo"],
+            "correct_answer": 2,
+            "feedback": "La cirugía de cataratas implica la extracción del cristalino opaco y su reemplazo con una lente artificial para restaurar la visión."
+        },
+        {
+            "question": "¿Qué tipo de cirugía se realiza para corregir la obstrucción en las arterias carótidas que llevan sangre al cerebro?",
+            "options": ["Angioplastia", "Cirugía de bypass", "Endarterectomía carotídea", "Implante de stent"],
+            "correct_answer": 2,
+            "feedback": "La endarterectomía carotídea es una cirugía para remover la placa aterosclerótica de las arterias carótidas y prevenir accidentes cerebrovasculares."
+        },
+        {
+            "question": "¿Cuál es el procedimiento quirúrgico para corregir la deformidad en la columna vertebral conocida como escoliosis?",
+            "options": ["Laminectomía", "Fusión espinal", "Cirugía de disco intervertebral", "Osteotomía"],
+            "correct_answer": 1,
+            "feedback": "La fusión espinal es un procedimiento para corregir la escoliosis al unir las vértebras afectadas y prevenir la curvatura anormal de la columna."
+        },
+        {
+            "question": "¿Qué tipo de cirugía se realiza para corregir la pérdida de audición causada por daño en los huesecillos del oído medio?",
+            "options": ["Cirugía de implante coclear", "Miringoplastia", "Estapedectomía", "Timpanoplastia"],
+            "correct_answer": 2,
+            "feedback": "La estapedectomía es una cirugía para corregir la pérdida de audición al reemplazar el hueso estribo en el oído medio."
+        },
+        {
+            "question": "¿Qué procedimiento quirúrgico se realiza para tratar la apendicitis aguda mediante la extracción del apéndice inflamado?",
+            "options": ["Colectomía", "Apendicectomía", "Histerectomía", "Esplenectomía"],
+            "correct_answer": 1,
+            "feedback": "La apendicectomía es el procedimiento quirúrgico para remover el apéndice inflamado y tratar la apendicitis aguda."
+        }
+    ],
+
+    "medicina_preventiva": [
+        {
+            "question": "¿Cuál es el objetivo principal de las vacunas en medicina preventiva?",
+            "options": ["Tratamiento de enfermedades existentes", "Prevención de infecciones", "Control de síntomas crónicos", "Estabilización de enfermedades autoinmunes"],
+            "correct_answer": 1,
+            "feedback": "Las vacunas se utilizan para prevenir infecciones al estimular la respuesta inmunológica del cuerpo contra patógenos específicos."
+        },
+        {
+            "question": "¿Cuál es el enfoque principal de la medicina preventiva en la promoción de la salud?",
+            "options": ["Tratamiento de enfermedades agudas", "Prevención de enfermedades", "Manejo de enfermedades crónicas", "Rehabilitación postoperatoria"],
+            "correct_answer": 1,
+            "feedback": "La medicina preventiva se centra en prevenir enfermedades antes de que ocurran, promoviendo hábitos saludables y realizando intervenciones para reducir los factores de riesgo."
+        },
+        {
+            "question": "¿Qué tipo de actividades se consideran medidas de prevención primaria en medicina preventiva?",
+            "options": ["Detección temprana de enfermedades", "Tratamiento de enfermedades crónicas", "Vacunación", "Rehabilitación post lesiones"],
+            "correct_answer": 2,
+            "feedback": "La vacunación es una medida de prevención primaria que ayuda a prevenir la aparición de enfermedades infecciosas al estimular la inmunidad del individuo."
+        },
+        {
+            "question": "¿Cuál es el propósito de los exámenes de detección en medicina preventiva?",
+            "options": ["Diagnosticar enfermedades crónicas", "Evaluar la respuesta al tratamiento", "Identificar factores de riesgo", "Tratar enfermedades agudas"],
+            "correct_answer": 2,
+            "feedback": "Los exámenes de detección se realizan para identificar factores de riesgo y enfermedades en sus etapas iniciales, permitiendo intervenciones tempranas."
+        },
+        {
+            "question": "¿Qué estrategias se utilizan comúnmente en la prevención de enfermedades cardiovasculares?",
+            "options": ["Dieta rica en grasas saturadas", "Inactividad física", "Tabaquismo", "Ejercicio regular y dieta saludable"],
+            "correct_answer": 3,
+            "feedback": "La prevención de enfermedades cardiovasculares implica hábitos de vida saludables, como el ejercicio regular y una dieta equilibrada, para reducir los factores de riesgo."
+        },
+        {
+            "question": "¿Cuál es el enfoque de la medicina preventiva en el control del cáncer?",
+            "options": ["Tratamiento de tumores existentes", "Prevención de metástasis", "Detección temprana y reducción de factores de riesgo", "Radioterapia preventiva"],
+            "correct_answer": 2,
+            "feedback": "La medicina preventiva en el control del cáncer se centra en la detección temprana y la reducción de factores de riesgo, con el objetivo de prevenir el desarrollo de tumores."
+        },
+        {
+            "question": "¿Cuál es el papel de la educación para la salud en medicina preventiva?",
+            "options": ["Promover el uso excesivo de medicamentos", "Prevenir el acceso a la información médica", "Brindar información sobre hábitos saludables", "Desincentivar la participación en programas de salud"],
+            "correct_answer": 2,
+            "feedback": "La educación para la salud en medicina preventiva proporciona información sobre hábitos saludables, promoviendo la prevención de enfermedades y el bienestar general."
+        },
+        {
+            "question": "¿Cómo contribuye la medicina preventiva a la prevención de enfermedades infecciosas?",
+            "options": ["Promoviendo la propagación de enfermedades", "Desalentando la higiene personal", "Fomentando el hacinamiento", "Fomentando la vacunación y prácticas de higiene"],
+            "correct_answer": 3,
+            "feedback": "La medicina preventiva aborda la prevención de enfermedades infecciosas mediante la promoción de la vacunación y prácticas de higiene personal para reducir la transmisión de patógenos."
+        },
+        {
+            "question": "¿Cuál es el papel de la medicina preventiva en la promoción de la salud mental?",
+            "options": ["Fomentar el estrés crónico", "Ignorar la salud mental", "Promover la conciencia y la gestión del estrés", "Recomendar el uso indiscriminado de psicofármacos"],
+            "correct_answer": 2,
+            "feedback": "La medicina preventiva en la salud mental se centra en promover la conciencia y la gestión del estrés, así como abordar factores que contribuyen a la salud mental positiva."
+        },
+        {
+            "question": "¿Cuál es la importancia de la medicina preventiva en la salud pública?",
+            "options": ["Aumentar la carga de enfermedad", "Reducir los costos de atención médica", "Mejorar la calidad de vida", "Promover la desinformación sobre salud"],
+            "correct_answer": 2,
+            "feedback": "La medicina preventiva en la salud pública contribuye a mejorar la calidad de vida al reducir la incidencia de enfermedades y promover hábitos saludables, lo que a su vez puede llevar a una reducción en los costos de atención médica."
+        }
+    ],
+
+
+    "neumologia": [
+        {
+            "question": "¿Cuál es la función principal de los bronquios en el sistema respiratorio?",
+            "options": ["Intercambio de gases", "Transporte de oxígeno en la sangre", "Filtración de partículas en el aire", "Producción de moco"],
+            "correct_answer": 2,
+            "feedback": "Los bronquios se encargan de transportar el aire desde la tráquea a los pulmones, y están revestidos de células ciliadas que filtran partículas en el aire."
+        },
+        {
+            "question": "¿Qué enfermedad crónica afecta las vías respiratorias y se caracteriza por episodios de obstrucción del flujo de aire?",
+            "options": ["Asma", "Neumonía", "Fibrosis pulmonar", "COPD"],
+            "correct_answer": 0,
+            "feedback": "El asma es una enfermedad crónica que causa inflamación y estrechamiento de las vías respiratorias, provocando episodios de dificultad para respirar."
+        },
+        {
+            "question": "¿Cuál es el término médico para la inflamación de los pulmones, generalmente causada por infecciones virales o bacterianas?",
+            "options": ["Asma", "Neumonía", "Bronquitis", "Enfisema"],
+            "correct_answer": 1,
+            "feedback": "La neumonía es la inflamación de los pulmones, y puede ser causada por infecciones virales, bacterianas u otros agentes."
+        },
+        {
+            "question": "¿Qué prueba médica se utiliza para evaluar la función pulmonar midiendo la cantidad de aire que puede ser exhalada después de una inhalación profunda?",
+            "options": ["Gasometría arterial", "Radiografía de tórax", "Tomografía computarizada", "Espirometría"],
+            "correct_answer": 3,
+            "feedback": "La espirometría es una prueba que mide la cantidad de aire que puede ser exhalada después de una inhalación profunda, evaluando así la función pulmonar."
+        },
+        {
+            "question": "¿Cuál es el principal factor de riesgo para el desarrollo de la enfermedad pulmonar obstructiva crónica (COPD)?",
+            "options": ["Exposición al amianto", "Tabaquismo", "Infecciones respiratorias frecuentes", "Antecedentes familiares"],
+            "correct_answer": 1,
+            "feedback": "El tabaquismo es el principal factor de riesgo para el desarrollo de COPD, una enfermedad pulmonar crónica que incluye bronquitis crónica y enfisema."
+        },
+        {
+            "question": "¿Cuál es la función de los alvéolos en el sistema respiratorio?",
+            "options": ["Producción de moco", "Intercambio de oxígeno y dióxido de carbono", "Transporte de oxígeno en la sangre", "Filtración de partículas en el aire"],
+            "correct_answer": 1,
+            "feedback": "Los alvéolos son pequeños sacos de aire en los pulmones donde ocurre el intercambio de oxígeno y dióxido de carbono con la sangre."
+        },
+        {
+            "question": "¿Cuál de las siguientes condiciones está relacionada con la formación de cicatrices en los pulmones, afectando la capacidad de expansión?",
+            "options": ["Asma", "Neumonía", "Fibrosis pulmonar", "Enfisema"],
+            "correct_answer": 2,
+            "feedback": "La fibrosis pulmonar es una condición en la cual se forman cicatrices en los pulmones, afectando la capacidad de expansión y función respiratoria."
+        },
+        {
+            "question": "¿Qué término se utiliza para describir la inflamación de los conductos bronquiales, causando tos y producción excesiva de mucosidad?",
+            "options": ["Asma", "Bronquitis", "Neumonía", "Enfisema"],
+            "correct_answer": 1,
+            "feedback": "La bronquitis es la inflamación de los conductos bronquiales, caracterizada por tos persistente y producción excesiva de mucosidad."
+        },
+        {
+            "question": "¿Cuál es el tratamiento común para la tuberculosis, una infección bacteriana que afecta los pulmones?",
+            "options": ["Antibióticos", "Broncodilatadores", "Corticosteroides", "Radioterapia"],
+            "correct_answer": 0,
+            "feedback": "La tuberculosis se trata comúnmente con antibióticos, siendo un tratamiento efectivo para combatir la infección bacteriana."
+        },
+        {
+            "question": "¿Qué enfermedad pulmonar se caracteriza por la destrucción de los sacos de aire en los pulmones, dificultando la respiración?",
+            "options": ["Asma", "Neumonía", "Fibrosis pulmonar", "Enfisema"],
+            "correct_answer": 3,
+            "feedback": "El enfisema es una enfermedad pulmonar que implica la destrucción de los sacos de aire en los pulmones, dificultando la respiración."
+        }
+    ],
+
+    "oftalmologia": [
+        {
+            "question": "¿Cuál de las siguientes estructuras es la parte coloreada del ojo que regula la cantidad de luz que entra?",
+            "options": ["Córnea", "Retina", "Pupila", "Esclerótica"],
+            "correct_answer": 2,
+            "feedback": "La pupila es la parte coloreada del ojo que se contrae o dilata para regular la cantidad de luz que entra en el ojo."
+        },
+        {
+            "question": "¿Qué parte del ojo es responsable de enfocar la luz en la retina para formar imágenes nítidas?",
+            "options": ["Cristalino", "Córnea", "Esclerótica", "Iris"],
+            "correct_answer": 0,
+            "feedback": "El cristalino es la parte del ojo responsable de cambiar de forma para enfocar la luz en la retina y formar imágenes nítidas."
+        },
+        {
+            "question": "¿Cuál es la capa interna del ojo que contiene células sensibles a la luz y envía señales al cerebro a través del nervio óptico?",
+            "options": ["Córnea", "Esclerótica", "Iris", "Retina"],
+            "correct_answer": 3,
+            "feedback": "La retina es la capa interna del ojo que contiene células sensibles a la luz, como los conos y bastones, y envía señales al cerebro a través del nervio óptico para procesar la visión."
+        },
+        {
+            "question": "¿Cuál de las siguientes condiciones oculares se caracteriza por la opacidad del cristalino, afectando la visión?",
+            "options": ["Cataratas", "Glaucoma", "Degeneración macular", "Conjuntivitis"],
+            "correct_answer": 0,
+            "feedback": "Las cataratas son la opacidad del cristalino que afecta la visión, generalmente asociada con el envejecimiento."
+        },
+        {
+            "question": "¿Qué función cumple la córnea en el ojo humano?",
+            "options": ["Enfocar la luz en la retina", "Regular la cantidad de luz que entra", "Producir lágrimas", "Soportar la forma del ojo"],
+            "correct_answer": 1,
+            "feedback": "La córnea regula la cantidad de luz que entra en el ojo al refractarla, contribuyendo a la formación de imágenes nítidas en la retina."
+        },
+        {
+            "question": "¿Cuál de las siguientes afecciones oculares se caracteriza por el aumento de la presión intraocular y daño al nervio óptico?",
+            "options": ["Cataratas", "Degeneración macular", "Conjuntivitis", "Glaucoma"],
+            "correct_answer": 3,
+            "feedback": "El glaucoma es una condición ocular que se caracteriza por el aumento de la presión intraocular y puede causar daño al nervio óptico si no se trata."
+        },
+        {
+            "question": "¿Cuál es la función principal del nervio óptico en el sistema visual?",
+            "options": ["Enfocar la luz en la retina", "Transmitir señales eléctricas al cerebro", "Regular la cantidad de luz que entra", "Producir lágrimas"],
+            "correct_answer": 1,
+            "feedback": "El nervio óptico transmite señales eléctricas generadas por la retina al cerebro, permitiendo la interpretación visual de la información."
+        },
+        {
+            "question": "¿Qué área de la retina es responsable de la visión detallada y del color?",
+            "options": ["Fóvea", "Papila", "Mácula", "Blind spot"],
+            "correct_answer": 0,
+            "feedback": "La fóvea es el área de la retina responsable de la visión detallada y del color, ya que contiene una alta concentración de conos."
+        },
+        {
+            "question": "¿Qué trastorno ocular se caracteriza por el crecimiento anormal de vasos sanguíneos en la retina, pudiendo afectar la visión?",
+            "options": ["Retinopatía diabética", "Conjuntivitis", "Miopía", "Astigmatismo"],
+            "correct_answer": 0,
+            "feedback": "La retinopatía diabética es un trastorno ocular que se caracteriza por el crecimiento anormal de vasos sanguíneos en la retina, y puede afectar la visión en personas con diabetes."
+        },
+        {
+            "question": "¿Qué parte del ojo controla el tamaño de la pupila para regular la cantidad de luz que entra?",
+            "options": ["Cristalino", "Iris", "Retina", "Esclerótica"],
+            "correct_answer": 1,
+            "feedback": "El iris es la parte del ojo que controla el tamaño de la pupila, regulando así la cantidad de luz que entra en el ojo."
+        }
+    ],
+    "epidemiologia": [
+        {
+            "question": "¿Cuál es el objetivo principal de la epidemiología en el campo de la salud pública?",
+            "options": ["Tratamiento de enfermedades", "Prevención de enfermedades", "Investigación médica", "Desarrollo de nuevos medicamentos"],
+            "correct_answer": 1,
+            "feedback": "El objetivo principal de la epidemiología en el campo de la salud pública es la prevención de enfermedades, mediante el estudio de la distribución y determinantes de las enfermedades en las poblaciones."
+        },
+        {
+            "question": "¿Qué tipo de estudios epidemiológicos se centra en la identificación de casos y controles para analizar la asociación entre exposiciones y enfermedades?",
+            "options": ["Estudios de cohortes", "Estudios transversales", "Estudios ecológicos", "Estudios de casos y controles"],
+            "correct_answer": 3,
+            "feedback": "Los estudios de casos y controles son un tipo de estudio epidemiológico que se centra en la identificación de casos y controles para analizar la asociación entre exposiciones y enfermedades."
+        },
+        {
+            "question": "¿Qué término se utiliza para describir la cantidad total de casos de una enfermedad en una población en un período específico?",
+            "options": ["Incidencia", "Prevalencia", "Mortalidad", "Endemia"],
+            "correct_answer": 0,
+            "feedback": "La incidencia se refiere a la cantidad total de casos nuevos de una enfermedad en una población en un período específico, proporcionando información sobre la frecuencia de aparición de la enfermedad."
+        },
+        {
+            "question": "¿Cuál es la diferencia entre los estudios de cohorte y los estudios de casos y controles?",
+            "options": ["Enfoque en casos individuales", "Asignación aleatoria de sujetos", "Recopilación retrospectiva de datos", "Seguimiento prospectivo de sujetos"],
+            "correct_answer": 3,
+            "feedback": "La principal diferencia entre los estudios de cohorte y los estudios de casos y controles es que los estudios de cohorte realizan un seguimiento prospectivo de sujetos a lo largo del tiempo, mientras que los estudios de casos y controles recopilan datos retrospectivos en casos y controles seleccionados."
+        },
+        {
+            "question": "¿Qué indicador epidemiológico representa la proporción de personas afectadas por una enfermedad en una población específica en un momento dado?",
+            "options": ["Incidencia", "Prevalencia", "Mortalidad", "Endemia"],
+            "correct_answer": 1,
+            "feedback": "La prevalencia representa la proporción de personas afectadas por una enfermedad en una población específica en un momento dado, reflejando la carga total de la enfermedad en la población."
+        },
+        {
+            "question": "¿Cuál es el propósito de la tasa de mortalidad en epidemiología?",
+            "options": ["Medir la frecuencia de enfermedades crónicas", "Evaluar la calidad de la atención médica", "Estimar la probabilidad de sobrevivir a una enfermedad", "Medir la frecuencia de muertes en una población"],
+            "correct_answer": 3,
+            "feedback": "La tasa de mortalidad en epidemiología se utiliza para medir la frecuencia de muertes en una población, proporcionando información sobre la magnitud de la mortalidad por diversas causas."
+        },
+        {
+            "question": "¿Cuál es la principal diferencia entre los estudios transversales y los estudios de cohortes?",
+            "options": ["Asignación aleatoria de sujetos", "Recopilación retrospectiva de datos", "Seguimiento prospectivo de sujetos", "Enfoque en casos individuales"],
+            "correct_answer": 2,
+            "feedback": "La principal diferencia entre los estudios transversales y los estudios de cohortes es que los estudios transversales recopilan datos en un solo punto en el tiempo, mientras que los estudios de cohortes realizan un seguimiento prospectivo de sujetos a lo largo del tiempo."
+        },
+        {
+            "question": "¿Qué término se refiere a la propagación continua de una enfermedad en una comunidad o población?",
+            "options": ["Incidencia", "Prevalencia", "Brotes", "Endemia"],
+            "correct_answer": 2,
+            "feedback": "Los brotes se refieren a la propagación continua de una enfermedad en una comunidad o población, indicando una concentración temporal y geográfica de casos."
+        },
+        {
+            "question": "¿Cuál es el propósito de los estudios ecológicos en epidemiología?",
+            "options": ["Evaluar la asociación entre exposiciones y enfermedades a nivel individual", "Analizar patrones de enfermedades en poblaciones", "Realizar un seguimiento prospectivo de sujetos", "Identificar casos y controles para un análisis detallado"],
+            "correct_answer": 1,
+            "feedback": "Los estudios ecológicos en epidemiología se centran en analizar patrones de enfermedades en poblaciones, examinando la relación entre variables a nivel de grupo o comunidad."
+        },
+        {
+            "question": "¿Cuál es el término que se utiliza para describir la persistencia de una enfermedad en una población de manera constante?",
+            "options": ["Incidencia", "Prevalencia", "Endemia", "Epidemia"],
+            "correct_answer": 2,
+            "feedback": "La endemia se refiere a la persistencia de una enfermedad en una población de manera constante, indicando que la enfermedad está presente de forma continua en un área geográfica específica."
+        }
+    ]
+}
+
+
