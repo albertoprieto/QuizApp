@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Médico</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+
+
+
+    <style>
+        .question-container {
+            display: none;
+            max-width: 600px;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        #results-container {
+            display: none;
+            max-width: 600px;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        #summary {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        #options-list li {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .btn-full-width {
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>.</h1>
+    <div class="container">
+        <div id="quiz-container">
+            <div id="start-container">
+                <button class="btn btn-primary btn-full-width" onclick="startQuiz()">Iniciar</button>
+            </div>
+            <div id="question-container" class="question-container">
+                <div class="card">
+                    <div class="card-body">
+                        <p id="question-text"></p>
+                        <ul id="options-list" class="list-unstyled"></ul>
+                        <button id="next-button" class="btn btn-primary btn-full-width" onclick="nextQuestion()" disabled>Siguiente</button>
+                        <p id="feedback" class="mt-3"></p>
+                    </div>
+                </div>
+            </div>
+            <div id="results-container" class="text-center">
+                <p id="summary"></p>
+                <!-- Puedes agregar gráficos u otras visualizaciones aquí si es necesario -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var currentQuestionIndex = 0;
+        var correctAnswers = 0;
+        var questions = {{ questions | tojson | safe }};
+        var quizContainer = document.getElementById('quiz-container');
+        var startContainer = document.getElementById('start-container');
+        var questionContainer = document.getElementById('question-container');
+        var resultsContainer = document.getElementById('results-container');
+        var questionText = document.getElementById('question-text');
+        var optionsList = document.getElementById('options-list');
+        var feedbackText = document.getElementById('feedback');
+        var summaryText = document.getElementById('summary');
+        var nextButton = document.getElementById('next-button');
+
+        function startQuiz() {
+            startContainer.style.display = 'none';
+            questionContainer.style.display = 'block';
+            displayQuestion();
+        }
+
+        function displayQuestion() {
+            var currentQuestion = questions[currentQuestionIndex];
+            questionText.innerText = currentQuestion.question;
+            optionsList.innerHTML = '';
+            feedbackText.innerText = '';
+
+            for (var i = 0; i < currentQuestion.options.length; i++) {
+                var option = currentQuestion.options[i];
+                var li = document.createElement('li');
+                li.innerText = option;
+                li.className = 'btn btn-primary btn-full-width';
+                li.setAttribute('data-index', i);
+                li.onclick = selectAnswer;
+                optionsList.appendChild(li);
+            }
+        }
+
+        function selectAnswer(event) {
+            var selectedIndex = event.target.getAttribute('data-index');
+            var correctIndex = questions[currentQuestionIndex].correct_answer;
+            var isCorrect = selectedIndex == correctIndex;
+            disableOptions();
+
+            if (isCorrect) {
+                event.target.className = 'btn btn-success btn-full-width';
+                correctAnswers++;
+                feedbackText.innerHTML = '<div class="alert alert-success mt-3" role="alert">¡Correcto! ' + questions[currentQuestionIndex].feedback + '</div>';
+            } else {
+                event.target.className = 'btn btn-danger btn-full-width';
+                feedbackText.innerHTML = '<div class="alert alert-danger mt-3" role="alert">Incorrecto. ' + questions[currentQuestionIndex].feedback + '</div>';
+            }
+            nextButton.disabled = false;
+        }
+
+        function disableOptions() {
+            var options = optionsList.getElementsByTagName('li');
+            for (var i = 0; i < options.length; i++) {
+                options[i].onclick = null;  // Deshabilitar la función onclick
+                options[i].style.pointerEvents = 'none';  // Deshabilitar eventos de puntero
+            }
+        }
+
+        function nextQuestion() {
+            // Restablecer estilos de botones y retroalimentación para la siguiente pregunta
+            var options = optionsList.getElementsByTagName('li');
+            for (var i = 0; i < options.length; i++) {
+                options[i].className = 'btn btn-primary btn-full-width';
+                options[i].style.pointerEvents = 'auto';  // Habilitar eventos de puntero
+            }
+            feedbackText.innerHTML = '';
+
+            currentQuestionIndex++;
+            if (currentQuestionIndex < questions.length) {
+                displayQuestion();
+                // Deshabilitar el botón de siguiente pregunta hasta que se seleccione una opción
+                nextButton.disabled = true;
+            } else {
+                // Fin del quiz
+                showResults();
+            }
+        }
+
+        function showResults() {
+            questionContainer.style.display = 'none';
+            resultsContainer.style.display = 'block';
+
+            var summaryHTML = '<h2>Resultados</h2>';
+            
+            for (var i = 0; i < questions.length; i++) {
+                var isCorrect = i < correctAnswers;
+                var iconHTML = isCorrect ? '<i class="fas fa-check"></i>' : '<i class="fas fa-times"></i>';
+                var questionStatus = isCorrect ? 'Correcto' : 'Incorrecto';
+
+                summaryHTML += '<p>Pregunta ' + (i + 1) + ': ' + questionStatus + ' ' + iconHTML + '</p>';
+            }
+
+            summaryText.innerHTML = summaryHTML;
+        }
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
